@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.initi.thierry.sqlcontacts.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_container_layout"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:background="#202050">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:id="@+id/ld_phone_bt"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To phone"
+            android:id="@+id/sync_phone_bt"
+            android:layout_alignParentEnd="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To D.B"
+            android:id="@+id/sync_database_bt"
+            android:layout_alignParentEnd="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Database"
+            android:id="@+id/ld_db_bt"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/form"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_below="@+id/bt_container_layout"
+        android:orientation="horizontal"
+        android:background="#909384">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_field"
+            android:hint="Name"
+            android:background="#ffffff"
+            android:layout_margin="5dp"
+            android:padding="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fname_field"
+            android:hint="Firstname"
+            android:background="#ffffff"
+            android:layout_margin="5dp"
+            android:padding="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_field"
+            android:hint="Number"
+            android:background="#ffffff"
+            android:layout_margin="5dp"
+            android:padding="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_field"
+            android:hint="Photo"
+            android:background="#ffffff"
+            android:layout_margin="5dp"
+            android:padding="2dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/insert_db_layout"
+        android:layout_below="@+id/form">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Insert in database"
+            android:id="@+id/insert_db_bt"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="#c9c9c9"
+        android:layout_below="@+id/insert_db_layout">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/listView"
+            android:background="#c6c6c6"
+            />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:id="@+id/listViewDb"
+            android:background="#787676"
+            android:layout_below="@+id/listView"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

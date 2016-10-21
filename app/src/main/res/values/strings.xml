@@ -1,0 +1,11 @@
+<resources>
+<<<<<<< HEAD
+    <string name="app_name">SQLContacts</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+=======
+    <string name="app_name">ContactListe</string>
+>>>>>>> 80f0722d008988340897fec68aadb1fcdc81d0a7
+</resources>

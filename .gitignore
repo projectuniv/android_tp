@@ -1,0 +1,12 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+<<<<<<< HEAD
+=======
+.externalNativeBuild
+>>>>>>> 80f0722d008988340897fec68aadb1fcdc81d0a7
